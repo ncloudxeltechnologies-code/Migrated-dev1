@@ -10,111 +10,154 @@
 <body>
 
 <!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <nav>
+<!-- TOP CONTACT BAR -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+      📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="industry.html" class="active">Industries</a>
+      <a href="industry.html" >Industries</a>
       <a href="case-studies.html">Case Studies</a>
+        <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
-<!-- HERO -->
-<section class="hero hero-image">
-  <div class="hero-content">
-    <h1>Engineering Secure and Intelligent Digital Transformation</h1>
-    <p>Helping businesses scale faster with DevOps, cybersecurity, and AI-driven cloud solutions.</p>
-    <a href="services.html" class="btn-primary">services</a>
+
+
+<section class="trust-strip">
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="10" data-suffix="+">0</h3>
+      <p>Years Experience</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="50" data-suffix="+">0</h3>
+      <p>Projects Delivered</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="99.9" data-suffix="%">0</h3>
+      <p>Uptime Achieved</p>
+    </div>
+
+    <div class="trust-item">
+      <h3 class="counter" data-target="30" data-suffix="%">0</h3>
+      <p>Avg Cost Optimization</p>
+    </div>
+
+  </div>
+</section>
+<section class="client-strip">
+  <div class="container">
+    <p class="client-strip-title">Trusted Cloud Platforms</p>
+
+    <div class="client-logos">
+      <img src="assets/images/aws.png" alt="AWS">
+      <img src="assets/images/Azure.svg" alt="Azure">
+      <img src="assets/images/gcp.png" alt="Google Cloud">
+      <img src="assets/images/kubernetes.png" alt="Kubernetes">
+      <img src="assets/images/docker.jpg" alt="Docker">
+    </div>
   </div>
 </section>
 
+<!-- HERO -->
+<section class="hero hero-image">
+  <div class="hero-content">
+    <h1>Build. Secure. Scale.</h1>
+    <p>
+      Cloud & DevOps engineering services that help businesses 
+      deploy faster, stay secure, and control cloud costs.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Talk to an Expert</a>
+      <a href="services.html" class="btn-secondary">View Services</a>
+    </div>
+  </div>
+</section>
 <!-- EXPERTISE -->
 <section class="section light">
   <div class="container">
-    <h2 class="section-title">Our Expertise</h2>
+    <h2 class="section-title">Our Core Services</h2>
 
-    <!-- YEARS COUNTER -->
-    <div class="counter-box" style="text-align:center; margin-bottom:40px;">
-      <span id="years-counter">1</span>
-      <p>Years of Cloud & DevOps Expertise</p>
-    </div>
+    <div class="cards services-grid">
 
-    <div class="cards">
       <div class="card">
-        <h3>DataCenter ,Cloud Computing Consulting</h3>
-        <p>Architecture, migration & modernization</p>
-        <p>AWS, Azure , GCP , VMWARE,Openstack</p>
-        <p>✔ Cloud Infrastructure Solutions</p>
-        <p>✔ Datacenter and Cloud Migration Services</p>
-        <p>✔ Hybrid Cloud Architecture</p>
-        <p>✔ Cloud Operation and Support</p>
-        <p>✔ Managed Cloud Services</p>
-        <p>✔ AWS , Azure & GCP</p>
-      </div>
-    <div class="card">
-        <h3>DevOps</h3>
-        <p>✔ DevOps Consulting</p>
-        <p>✔ Devops Consulting</p>
-        <p>✔ Infrastructure as Code</p>
-        <p>✔ Cloud Automation and SRE Services</p>
-        <p>✔ AWS , Azure & GCP</p>
-      </div>
-      <div class="card">
-        <h3>DevSecOps & Security</h3>
-        <p>✔ DevSecOps Consulting</p>
-        <p>✔ Cloud & CICD Security</p>
-        <p>✔ Secrets Management</p>
-        <p>✔ Vulerability Scanning and Compliance Automation</p>
-        <p>✔ Zero Trust Architecture</p>
+        <h3>Cloud & Datacenter Consulting</h3>
+        <p>
+          Design, migrate, and modernize infrastructure across AWS, Azure, GCP,
+          VMware, and OpenStack with scalability and security built in.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Kubernetes & Containerisation</h3>
-        <p>✔ Kubernetes Consulting</p>
-        <p>✔ Kubernetes Managed Services</p>
-        <p>✔ Docker Containerisation</p>
-        <p>✔ Helm Charts ,GitOps(ArgoCD, Flux)</p>
-        <p>✔ Kubernetes Security</p>
-        <p>✔ Kubernetes Cost Optimization</p>
+        <h3>DevOps & Platform Engineering</h3>
+        <p>
+          CI/CD pipelines, infrastructure as code, automation, and SRE practices
+          to accelerate software delivery with reliability.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>DevSecOps & Cloud Security</h3>
+        <p>
+          Shift-left security with secure pipelines, secrets management,
+          vulnerability scanning, and compliance automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes & Containers</h3>
+        <p>
+          Enterprise-grade Kubernetes platforms, GitOps workflows, Helm charts,
+          and cost-optimized container orchestration.
+        </p>
       </div>
 
       <div class="card">
         <h3>FinOps & Cost Optimization</h3>
-        <p>✔ Cloud Cost optimization</p>
-        <p>✔ FinOps Consulting</p>
-        <p>✔  Cloud Spend Optimization</p>
-        <p>✔ Budget Alerts and Governance</p>
-        <p>✔ AWS , Azure and GCP</p>
+        <p>
+          Gain visibility, governance, and cost control across multi-cloud
+          environments to reduce unnecessary cloud spend.
+        </p>
       </div>
-      <div class="card">
-        <h3>Observability & Reliability </h3>
-        <p>✔ High level Architecture</p>
-        <p>✔ Monitoting and Alerting</p>
-        <p>✔ Observability      </p>
-        <p>✔ Prometheus & Grafana</p>
-        <p>✔ ELK Stack & Log Management</p>
 
-      </div>
       <div class="card">
-        <h3>Security & Security Compliances</h3>
-        <p>✔ Cloud Security Services</p>
-        <p>✔ Infrastucture Security</p>
-        <p>✔ Identity & Access Management</p>
-        <p>✔ Data Protection & Network Security</p>
-        <p>✔ Secure Cloud design</p>
+        <h3>Observability & Reliability</h3>
+        <p>
+          End-to-end monitoring, logging, and alerting using Prometheus, Grafana,
+          and ELK to ensure high availability.
+        </p>
       </div>
-     <div class="card">
-        <h3>Website Development & Maintenance</h3>
-        <p>✔ Custom Website Development</p>
-        <p>✔ Startup Website Solution</p>
-        <p>✔ Static and Dynamic Websites</p>
-        <p>✔ Ongoing Website Support</p>
-        <p>✔ Website Support and Monitoring</p>
-      </div>
+
     </div>
   </div>
 </section>
@@ -122,26 +165,38 @@
 <!-- WHY CHOOSE US -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Why Choose Us</h2>
+    <h2 class="section-title">Why NCloudXel</h2>
 
     <div class="cards">
+
       <div class="card">
-        <h3>On-Time Delivery</h3>
-        <p>We follow a disciplined, milestone-driven approach to ensure timely delivery of every cloud and DevOps engagement. By combining strong project governance, automation, and continuous collaboration, NCloudXel delivers solutions when you need them—helping you meet business deadlines, reduce risk, and accelerate time-to-value.</p>
+        <h3>Outcome-Driven Delivery</h3>
+        <p>
+          We focus on measurable results — faster deployments, reduced downtime,
+          and optimized cloud spend.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Customer Centric</h3>
-        <p>At NCloudXel, customers are at the core of everything we do. We don’t offer one-size-fits-all cloud solutions — we listen, understand your business goals, and design cloud architectures that truly support your growth. From strategy to execution and ongoing optimization, our focus remains on delivering measurable outcomes, reliability, and long-term value for your business.</p>
+        <h3>Security by Design</h3>
+        <p>
+          Security and compliance are embedded into every architecture and
+          pipeline, not added later.
+        </p>
       </div>
 
       <div class="card">
-        <h3>Integrity for better long term relationships</h3>
-        <p>Secure & Compliant Solutions</p>
+        <h3>Long-Term Partnership</h3>
+        <p>
+          We work as an extension of your team, ensuring reliability,
+          transparency, and continuous improvement.
+        </p>
       </div>
+
     </div>
   </div>
 </section>
+
 <script>
   let count = 1;
   const maxYears = 10;
@@ -224,11 +279,113 @@ function getBotReply(message) {
     return "Thanks for your message. Our team will get back to you soon.";
 }
 </script>
-
+<section class="cta-strip">
+  <div class="container">
+    <h2>Ready to Modernize Your Cloud?</h2>
+    <p>Let’s discuss your challenges and design the right solution.</p>
+  </div>
+</section>
 <!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 ncloudxel Technologies | <a href="privacy.html">Privacy Policy</a></p>
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps, and security engineering services helping businesses
+        scale reliably and securely.
+      </p>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 ncloudxel Technologies. All Rights Reserved.
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
 </footer>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+let counterStarted = false;
+
+function animateCounters() {
+  counters.forEach(counter => {
+    const target = parseFloat(counter.dataset.target);
+    const suffix = counter.dataset.suffix || '';
+    let count = 0;
+
+    const speed = target > 50 ? 20 : 40; // smoother for small numbers
+
+    const updateCount = () => {
+      count += target / 80;
+
+      if (count < target) {
+        counter.textContent = count.toFixed(target % 1 === 0 ? 0 : 1) + suffix;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.textContent = target + suffix;
+      }
+    };
+
+    updateCount();
+  });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !counterStarted) {
+      counterStarted = true;
+      animateCounters();
+    }
+  });
+}, { threshold: 0.4 });
+
+observer.observe(document.querySelector('.trust-strip'));
+</script>
+<script>
+const animated = document.querySelectorAll('.card, .section-title');
+
+const animObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+animated.forEach(el => {
+  el.classList.add('fade-in');
+  animObserver.observe(el);
+});
+</script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
 
 </body>
 </html>

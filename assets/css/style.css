@@ -303,3 +303,313 @@ nav a {
 .main-nav a:hover {
   color: #1a73e8;
 }
+.industries {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.industry-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.industry-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.industry-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.industry-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 30px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* ===== WhatsApp Floating Button with Pulse ===== */
+.whatsapp-wrapper {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.whatsapp-float {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    animation: whatsapp-pulse 2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes whatsapp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background: #25d366;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+}
+
+/* Tooltip Arrow */
+.whatsapp-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #25d366;
+}
+
+/* Show tooltip on hover */
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* ===== Chatbot Styles ===== */
+.chatbot-container {
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+.chatbot-toggle {
+    width: 55px;
+    height: 55px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.chatbot-box {
+    width: 300px;
+    height: 380px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background: #0d6efd;
+    color: #fff;
+    padding: 12px;
+    border-radius: 14px 14px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.bot-msg {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+.user-msg {
+    background: #0d6efd;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chatbot-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.chatbot-input button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+/* Contact Page Layout */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-left h2 {
+    margin-bottom: 15px;
+}
+
+.contact-desc {
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.contact-image {
+    width: 100%;
+    border-radius: 14px;
+    margin: 20px 0;
+}
+
+.contact-points p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Right Pricing Form Card */
+.contact-right {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.pricing-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.btn-primary.full {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #d4145a, #fbb03b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}

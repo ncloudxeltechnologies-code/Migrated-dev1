@@ -8,25 +8,48 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <nav>
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+       📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="industry.html" class="active">Industries</a>
       <a href="case-studies.html">Case Studies</a>
+           <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
 <!-- PAGE HERO -->
-<section class="hero" style="height:30vh;">
+<section class="hero hero-premium "style="height:30vh;">
   <div class="hero-content">
     <h1>Our Services</h1>
-    <p>Cloud • DevOps • Security • Cost Optimization</p>
+  <p>Cloud • DevOps • Security • Cost Optimization</p>
   </div>
 </section>
 <!-- SERVICES OVERVIEW -->
@@ -120,7 +143,7 @@
        class="whatsapp-float"
        target="_blank"
        aria-label="Chat with us on WhatsApp">
-        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <img src="assets/images/whatsapp.png">
         <span class="whatsapp-tooltip">Chat with us</span>
     </a>
 </div>
@@ -182,9 +205,52 @@ function getBotReply(message) {
 </script>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 ncloudxel Technologies | <a href="privacy.html">Privacy Policy</a></p>
+
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps & security engineering partner helping businesses
+        build scalable, secure, and cost-efficient platforms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved. •
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
 </footer>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
 
 </body>
 </html>

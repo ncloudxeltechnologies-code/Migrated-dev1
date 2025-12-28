@@ -8,21 +8,44 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <nav>
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+      📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
+    </div>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="industry.html" class="active">Industries</a>
       <a href="case-studies.html">Case Studies</a>
+           <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
-<section class="hero" style="height:30vh;">
+<section class="hero hero-premium" style="height:30vh;">
   <div class="hero-content">
     <h1>Connect With Us</h1>
     <p>Get in touch with us today by filling out the form to discuss your
@@ -30,6 +53,7 @@
         pricing solution</p>
   </div>
 </section>
+
 <!-- CONTACT INFO -->
 <!-- CONTACT + PRICING SECTION -->
 <section class="section light">
@@ -38,7 +62,10 @@
     <!-- LEFT CONTENT -->
     <div class="contact-left">
       <h2 class="gradient-text">Connect With Us</h2>
-      <img src="assets/images/contact-team.jpg.png" alt="Team" class="contact-image">
+      <div class="contact-image-wrap">
+     <img src="assets/images/contact-team.jpg.png" alt="Cloud Consulting Team">
+      </div>
+
 
       <div class="contact-points">
         <p>✔ 24/7 Customer Assistance</p>
@@ -52,7 +79,7 @@
     <div class="contact-right">
       <h2 class="gradient-text center">Request for Pricing</h2>
 
-      <form class="pricing-form" action="https://formspree.io/f/yourformid" method="POST">
+      <form class="pricing-form" action="https://formspree.io/f/xojqwypy" method="POST">
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email Address" required>
         <input type="tel" name="phone" placeholder="Phone Number">
@@ -60,6 +87,7 @@
         <input type="text" name="company" placeholder="Company Name">
 
         <button type="submit" class="btn-primary full">Submit</button>
+         <div class="formspree-recaptcha"></div>
       </form>
     </div>
 
@@ -69,11 +97,6 @@
 
 <!-- CONTACT FORM -->
 <section class="section">
-  
-  
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-
 <script>
 function toggleChatbot() {
     const box = document.getElementById("chatbotBox");
@@ -108,6 +131,16 @@ function getBotReply(message) {
     return "Thanks for your message. Our team will get back to you soon.";
 }
 </script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
+
 <!-- WhatsApp Floating Button -->
 <div class="whatsapp-wrapper">
     <a href="https://wa.me/919311663343"
@@ -140,4 +173,41 @@ function getBotReply(message) {
         </div>
     </div>
 </div>
+
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps & security engineering partner helping businesses
+        build scalable, secure, and cost-efficient platforms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved•
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
 </body>

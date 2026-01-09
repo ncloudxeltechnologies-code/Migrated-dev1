@@ -1077,4 +1077,33 @@ nav a {
     background: #084ec1;
     transform: translateY(-2px);
 }
+/* Default mobile-first */
+body { font-size: 16px; }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container { padding: 20px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container { padding: 40px; }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button, a {
+  padding: 12px 20px; /* easier to tap */
+}
+html {
+  font-size: 18px; /* comfortable reading on phones */
+}
+
+
 
